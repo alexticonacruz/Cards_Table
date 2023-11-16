@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="contenedor" onclick="toggleActivacion(this)">Contenido del contenedor</div>
+
+  <div class="tarjetaContenedor">
+    <div class="foto">
+      <div id="fotos" onclick="activarDetalle(this)">
+        <picture>
+          <img id="fotoA" src="chris.jpg" alt="">
+        </picture>
+
+      </div>
+      <div class="camisa">
+        <div class="cuello"></div>
+        <div class="cuerpo">
+
+          <div class="manga"></div>
+          <div class="manga"></div>
+
+          <div class="texto">
+            <h2>Detalle :</h2>
+            <p id="productoId" style="display: none;">1</p>
+            <div class="precio">
+              <p id="id" style="display: none;">55</p>
+              <p>Precio :</p>
+              <input type="number" id="precio" placeholder="50">
+
+            </div>
+            <div class="cantidad">
+              <p>Cantidad :</p>
+              <input type="number" id="cantidad" placeholder="5">
+
+            </div>
+
+            <button class="btn btn-primary" id="btnDetalle"
+              onclick="agregarDesdeTarjeta(this.parentElement)">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foto">
+      <div id="fotos" onclick="activarDetalle(this)">
+        <picture>
+          <img id="fotoA" src="chris.jpg" alt="">
+        </picture>
+
+      </div>
+      <div class="camisa">
+        <div class="cuello"></div>
+        <div class="cuerpo">
+
+          <div class="manga"></div>
+          <div class="manga"></div>
+
+          <div class="texto">
+            <h2>Detalle :</h2>
+            <p id="productoId" style="display: none;">1</p>
+            <div class="precio">
+              <p id="id" style="display: none;">55</p>
+              <p>Precio :</p>
+              <input type="number" id="precio" placeholder="50">
+
+            </div>
+            <div class="cantidad">
+              <p>Cantidad :</p>
+              <input type="number" id="cantidad" placeholder="5">
+
+            </div>
+
+            <button class="btn btn-primary" id="btnDetalle"
+              onclick="agregarDesdeTarjeta(this.parentElement)">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="foto">
+      <div id="fotos" onclick="activarDetalle(this)">
+        <picture>
+          <img id="fotoA" src="chris.jpg" alt="">
+        </picture>
+
+      </div>
+      <div class="camisa">
+        <div class="cuello"></div>
+        <div class="cuerpo">
+
+          <div class="manga"></div>
+          <div class="manga"></div>
+
+          <div class="texto">
+            <h2>Detalle :</h2>
+            <p id="productoId" style="display: none;">1</p>
+            <div class="precio">
+              <p id="id" style="display: none;">55</p>
+              <p>Precio :</p>
+              <input type="number" id="precio" placeholder="50">
+
+            </div>
+            <div class="cantidad">
+              <p>Cantidad :</p>
+              <input type="number" id="cantidad" placeholder="5">
+
+            </div>
+
+            <button class="btn btn-primary" id="btnDetalle"
+              onclick="agregarDesdeTarjeta(this.parentElement)">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="foto">
+      <div id="fotos" onclick="activarDetalle(this)">
+        <picture>
+          <img id="fotoA" src="chris.jpg" alt="">
+        </picture>
+
+      </div>
+      <div class="camisa">
+        <div class="cuello"></div>
+        <div class="cuerpo">
+
+          <div class="manga"></div>
+          <div class="manga"></div>
+
+          <div class="texto">
+            <h2>Detalle :</h2>
+            <p id="productoId" style="display: none;">1</p>
+            <div class="precio">
+              <p id="id" style="display: none;">22</p>
+              <p>Precio :</p>
+              <input type="number" id="precio" placeholder="50">
+
+            </div>
+            <div class="cantidad">
+              <p>Cantidad :</p>
+              <input type="number" id="cantidad" placeholder="5">
+
+            </div>
+
+            <button class="btn btn-primary" id="btnDetalle"
+              onclick="agregarDesdeTarjeta(this.parentElement)">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="foto">
+      <div id="fotos" onclick="activarDetalle(this)">
+        <picture>
+          <img id="fotoA" src="chris.jpg" alt="">
+        </picture>
+
+      </div>
+      <div class="camisa">
+        <div class="cuello"></div>
+        <div class="cuerpo">
+
+          <div class="manga"></div>
+          <div class="manga"></div>
+
+          <div class="texto">
+            <h2>Detalle :</h2>
+            <p id="productoId" style="display: none;">1</p>
+            <div class="precio">
+              <p id="id" style="display: none;">55</p>
+              <p>Precio :</p>
+              <input type="number" id="precio" placeholder="50">
+
+            </div>
+            <div class="cantidad">
+              <p>Cantidad :</p>
+              <input type="number" id="cantidad" placeholder="5">
+
+            </div>
+
+            <button class="btn btn-primary" id="btnDetalle"
+              onclick="agregarDesdeTarjeta(this.parentElement)">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <h2>Tabla de Productos</h2>
+
+  <!-- Tabla para mostrar los productos agregados -->
+  <table id="tablaProductos">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+      <!-- Aquí se agregarán las filas de productos -->
+    </tbody>
+  </table>
+  <input type="hidden" id="listaCardsInput" name="listaCards" />
+
+  <!-- Botón para enviar la tabla al controlador -->
+  <button onclick="enviarTabla()">Enviar al Controlador</button>
+
+  <form id="formularioStock" asp-action="EnviarDatos" method="post">
+    <!-- Otros campos del formulario -->
+    <input type="hidden" id="listaObjetos" name="listaObjetos" />
+    <button type="button" onclick="enviarFormulario()">Enviar Datos</button>
+  </form>
+
+
+  <footer>HOla</footer>
+
+  <script>
+    function agregarDesdeTarjeta(tarjeta) {
+      var da = tarjeta.querySelector("#cantidad"); //obtiene la etiqueta
+      var cantidad = da.value;
+      var da2 = tarjeta.querySelector("#precio");
+      var precios = da2.value;
+      var daI = tarjeta.querySelector("#id").innerHTML;
+
+      console.log("precio : " + precios + " cantidad :" + cantidad + "id" + daI);
+
+      //var id = tarjeta.id;
+      //var nombre = tarjeta.querySelector("h3").innerHTML;
+      //var precio = parseInt(tarjeta.querySelector("p").innerText.match(/\d+/)[0]); // Extraer el número del texto
+
+      // Llama a la función con los valores obtenidos
+      //agregarProducto(id, nombre, precio);
+      agregarProducto(cantidad, precios, daI);
+      da.value = "";
+      da2.value = "";
+    }
+
+    // Función para agregar un producto a la tabla
+    function agregarProducto(cantidad, precio, id) {
+      console.log(id + " entró al método");
+
+      var cuerpoTabla = document.getElementById("cuerpoTabla");
+      var filas = cuerpoTabla.getElementsByTagName("tr");
+      var filaExistente = null;
+
+      for (var i = 0; i < filas.length; i++) {
+        var celdas = filas[i].getElementsByTagName("td");
+        var idEnFila = celdas[0].textContent;
+
+        if (idEnFila === id) {
+          filaExistente = filas[i];
+          break;
+        }
+      }
+
+      if (filaExistente) {
+        actualizarFilaExistente(filaExistente, cantidad, precio);
+      } else {
+        agregarNuevaFila(cuerpoTabla, id, cantidad, precio);
+      }
+    }
+
+    function actualizarFilaExistente(fila, cantidad, precio) {
+      var celdas = fila.getElementsByTagName("td");
+      celdas[2].textContent = precio;
+      celdas[3].textContent = cantidad;
+      var total = parseInt(cantidad) * parseInt(precio);
+      celdas[4].textContent = total;
+    }
+
+    function agregarNuevaFila(cuerpoTabla, id, cantidad, precio) {
+      var nuevaFila = document.createElement("tr");
+
+      crearYAgregarCelda(nuevaFila, id);
+      crearYAgregarCelda(nuevaFila, "Nombre del producto");
+      crearYAgregarCelda(nuevaFila, precio);
+      crearYAgregarCelda(nuevaFila, cantidad);
+      var total = parseInt(cantidad) * parseInt(precio);
+      crearYAgregarCelda(nuevaFila, total);
+
+      cuerpoTabla.appendChild(nuevaFila);
+    }
+
+    function crearYAgregarCelda(fila, contenido) {
+      var celda = document.createElement("td");
+      celda.textContent = contenido;
+      fila.appendChild(celda);
+    }
+
+    function obtenerDatosTablaComoJson() {
+      var tabla = document.getElementById("tablaProductos");
+      var filas = tabla.getElementsByTagName("tr");
+      var datos = [];
+
+      for (var i = 1; i < filas.length; i++) { // Empezamos desde 1 para omitir el encabezado
+        var celdas = filas[i].getElementsByTagName("td");
+        var objeto = {
+          id: celdas[0].textContent,
+          nombre: celdas[1].textContent,
+          precio: celdas[2].textContent,
+          cantidad: celdas[3].textContent,
+          total: celdas[4].textContent
+          // Agrega otros atributos si los tienes en la tabla
+        };
+        datos.push(objeto);
+      }
+
+      return JSON.stringify(datos);
+    }
+
+    function enviarFormulario() {
+      var datosJson = obtenerDatosTablaComoJson();
+      console.log(datosJson);
+      document.getElementById("listaObjetos").value = datosJson;
+      //document.getElementById("formularioStock").submit();
+    }
+
+
+  </script>
+  <style>
+    /* Estilos para la tarjeta de producto */
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* Estilos para la tabla */
+    #tablaProductos {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    #tablaProductos th,
+    #tablaProductos td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    #tablaProductos th {
+      background-color: #f2f2f2;
+    }
+
+    /* Botón de agregar a la tabla */
+    .btnAgregar {
+      background-color: #4caf50;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Estilos adicionales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</body>
+
+</html>
