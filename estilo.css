@@ -17,8 +17,7 @@
     padding: 0;
 }
 
-body {
-}
+body {}
 
 .camisa {
     margin-top: 50px;
@@ -160,53 +159,64 @@ input {
 
 #fotos {
     background-color: #3498db;
-    width: 200px ;
-    height: 200px ;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     position: relative;
     border: #3498db 3px solid;
-    &:hover{
-        transform: scale(1.5) ;
-        transition: transform 0.7s ease; /* Transición más lenta en hover */
+
+    &:hover {
+        transform: scale(1.5);
+        transition: transform 0.7s ease;
+        /* Transición más lenta en hover */
 
     }
-    transition: transform 1s ease; /* Transición más lenta en hover */
+
+    transition: transform 1s ease;
+    /* Transición más lenta en hover */
 
 }
-.foto{
+
+.foto {
     /* background-color: aqua; */
     width: 200px;
     height: 200px;
     position: relative;
     border-radius: 10px;
-    transition: background-color 2s, width 0.5s, height 0.5s; /* Transiciones suaves */
-    & img{
+    transition: background-color 2s, width 0.5s, height 0.5s;
+
+    /* Transiciones suaves */
+    & img {
         cursor: pointer;
     }
 }
-.foto.activo{
+
+.foto.activo {
     background-color: rebeccapurple;
-    background-image: linear-gradient(-45deg, rgba(255, 0, 0, 0.213), rgba(0, 0, 255, 0.213),rgba(0, 0, 255, 0.556));
+    background-image: linear-gradient(-45deg, rgba(255, 0, 0, 0.213), rgba(0, 0, 255, 0.213), rgba(0, 0, 255, 0.556));
     width: 400px;
     height: 300px;
-    transition: background-color 2s, width 0.5s, height 0.5s; /* Transiciones suaves */
+    transition: background-color 2s, width 0.5s, height 0.5s;
+    /* Transiciones suaves */
     border-radius: 10px;
-    & #fotos{
-        &:hover{
+
+    & #fotos {
+        &:hover {
             cursor: pointer;
             transform: scale(1);
 
         }
     }
 }
-#fotos.activo + .camisa{
+
+#fotos.activo+.camisa {
     animation: animacionFoto 2s forwards;
     opacity: 1;
     position: absolute;
     top: -17%;
     left: 0;
     z-index: 1;
-   
+
 }
 
 #fotoA {
@@ -232,9 +242,7 @@ input {
     animation: animacionFoto 3s forwards;
 } */
 @keyframes animacionFoto {
-    0% {
-        
-    }
+    0% {}
 
     100% {
         transform: translateX(50%);
@@ -242,7 +250,7 @@ input {
     }
 }
 
-.tarjetaContenedor{
+.tarjetaContenedor {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
@@ -253,10 +261,54 @@ input {
 
 }
 
-footer{
+footer {
     background-color: #3498db;
 }
-#btnDetalle{
+
+#btnDetalle {
     margin-top: 8px;
     width: 89%;
+}
+
+
+/* Estilos para la tabla */
+#tablaProductos {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#tablaProductos th,
+#tablaProductos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tablaProductos th {
+    background-color: #f2f2f2;
+}
+
+/* Botón de agregar a la tabla */
+.btnAgregar {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+button {
+    cursor: pointer;
 }
